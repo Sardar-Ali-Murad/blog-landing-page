@@ -17,11 +17,26 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  
 }
+
+.section2Wrap{
+  background-image: url('../../public/assets/bg.png');
+  background-size: cover;
+  background-position: center; 
+}
+
+.section4Wrap{
+  background-image: url('../../public/assets/section4.jpg');
+  background-size: cover;
+  background-position: center; 
+}
+
+.section4Wrap::before{
+  opacity: .6;
+  background-image: url('../../public/assets/section4.jpg');
+  background-size: cover;
+  background-position: center; 
+}
+
+
