@@ -39,9 +39,9 @@ const Section3 = () => {
         industry.
       </p>
       <div className="mt-[100px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-[50px]">
-        {array.map((item) => {
+        {array.map((item,i) => {
           return (
-            <div className="flex flex-col md:flex-col lg:flex-row bg-[#e5e7eb] gap-[30px] px-[20px] p rounded-lg pb-[10px]">
+            <div key={i} className="flex flex-col md:flex-col lg:flex-row bg-[#e5e7eb] gap-[30px] px-[20px] p rounded-lg pb-[10px]">
               <Image src={item?.mainImage} className="h-[100%] w-[200px] p-[12px] rounded-full" />
               <div className="flex flex-col gap-[15px] rounded-full mt-[30px]">
                 <div className="flex flex-row items-center gap-[15px]">

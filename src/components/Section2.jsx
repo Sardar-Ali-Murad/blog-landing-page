@@ -46,8 +46,8 @@ const Section2 = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[40px] mt-[80px]">
             {
-                array.map((item)=>{
-                    return <div className="bg-[white] px-[30px] py-[30px] rounded-lg flex flex-col gap-[15px]">
+                array.map((item,i)=>{
+                    return <div key={i} className="bg-[white] px-[30px] py-[30px] rounded-lg flex flex-col gap-[15px]">
                         <Image src={item?.mainImage} className="rounded-lg"/>
                         <h1 className="text-[18px] font-bold">{item?.heading}</h1>
                         <div className="flex flex-row gap-[10px] items-center">

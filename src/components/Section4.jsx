@@ -1,7 +1,7 @@
 import React from "react";
 import Wrap from "./Wrap";
 import Image from "next/image";
-import image from "../../public/assets/Section4.jpg";
+import image from "../../public/assets/section4.jpg";
 
 const Section4 = () => {
   let array = [
@@ -56,9 +56,9 @@ const Section4 = () => {
             </div>
           </div>
           <div className="flex-1 bg-[white] px-[50px] py-[20px] rounded-r-lg rounded-br-lg">
-            {array.map((item) => {
+            {array.map((item,i) => {
               return (
-                <div className="mb-[40px] flex flex-col gap-[10px]">
+                <div className="mb-[40px] flex flex-col gap-[10px]" key={i}>
                   <h1 className="text-blue-600">{item?.topic}</h1>
                   <h1 className="text-[20px]">{item?.head}</h1>
                   <p className="text-gray-700">{item?.para}</p>

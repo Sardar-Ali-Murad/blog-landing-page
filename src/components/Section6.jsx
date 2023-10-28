@@ -30,8 +30,8 @@ const Section6 = () => {
     <Wrap>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px]'>
         {
-            array.map((item)=>{
-                return <div className='relative rounded-lg'>
+            array.map((item,i)=>{
+                return <div className='relative rounded-lg' key={i}>
                     <Image src={item?.image} className='rounded-lg'/>
                         <div className='bg-gray-300 absolute top-[15px] py-[8px] w-[140px] flex flex-row items-center left-[10px] px-[10px] rounded-full gap-[8px]'>
                             <div className='h-[10px] w-[10px] rounded-full bg-white '></div>

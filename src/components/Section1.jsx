@@ -38,8 +38,8 @@ const Section1 = () => {
       <p className='text-gray-500 text-center my-[20px]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px] mt-[50px]'>
          {
-            array.map((item)=>{
-                return <div className='border border-gray-100 shadow-gray-50 shadow-md'>
+            array.map((item,i)=>{
+                return <div key={i} className='border border-gray-100 shadow-gray-50 shadow-md'>
                     <div className='relative '>
                     <Image src={item?.mainImage}/>
                     <div className='absolute bottom-0 left-0 px-[10px] py-[5px] bg-[white] flex gap-[10px] items-center'>
